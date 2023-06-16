@@ -8,5 +8,5 @@ type ReqBase struct {
 type ResBase struct {
 	Message string            `json:"message"`
 	Code    int               `json:"code"`
-	Extra   map[string]string `json:"extra"`
+	Extra   map[string]string `json:"extra,omitempty"`
 }

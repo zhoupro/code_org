@@ -1,11 +1,15 @@
 package dto
 
 type ReqHello struct {
-	Name string
-	ReqBase
+	Name    string `json:"name"`
+	ReqBase `json:"req_base"`
+}
+
+type ResHelloData struct {
+	Echo string `json:"echo"`
 }
 
 type ResHello struct {
-	Echo string
+	Data []ResHelloData `json:"data"`
 	ResBase
 }

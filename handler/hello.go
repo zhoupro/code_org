@@ -7,6 +7,6 @@ import (
 
 func Hello(ctx context.Context, req dto.ReqHello) (dto.ResHello, error) {
 	ret := new(dto.ResHello)
-	ret.Echo = req.Name
+	ret.Data = []dto.ResHelloData{{Echo: "Hello " + req.Name}}
 	return *ret, nil
 }

@@ -15,9 +15,9 @@ func Hello() gin.HandlerFunc {
 		req.Name = c.Query("name")
 		res, err := handler.Hello(ctx, req)
 		if err != nil {
-			c.String(500, "error")
+			c.JSON(500, res)
 		} else {
-			c.String(200, res.Echo)
+			c.JSON(200, res)
 		}
 	}
 }
