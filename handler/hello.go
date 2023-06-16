@@ -1,7 +1,12 @@
 package handler
 
-import "fmt"
+import (
+	"code_org/handler/dto"
+	"context"
+)
 
-func Hello(name string) string {
-	return fmt.Sprintf("Hello %s", name)
+func Hello(ctx context.Context, req dto.ReqHello) (dto.ResHello, error) {
+	ret := new(dto.ResHello)
+	ret.Echo = req.Name
+	return *ret, nil
 }
