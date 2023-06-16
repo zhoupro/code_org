@@ -1,4 +1,5 @@
 init:
+	@ mkdir -p protocol/ginp && touch protocol/ginp/.gitkeep
 	@ mkdir -p app && touch app/.gitkeep
 	@ mkdir -p conf && touch conf/.gitkeep
 	@ mkdir -p const && touch const/.gitkeep
