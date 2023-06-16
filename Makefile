@@ -1,0 +1,19 @@
+init:
+	@ mkdir -p app && touch app/.gitkeep
+	@ mkdir -p conf && touch conf/.gitkeep
+	@ mkdir -p const && touch const/.gitkeep
+	@ mkdir -p cron && touch cron/.gitkeep
+	@ mkdir -p handler/dto && touch handler/dto/.gitkeep
+	@ mkdir -p handler/convertor && touch handler/convertor/.gitkeep
+	@ mkdir -p handler/utils && touch handler/utils/.gitkeep
+	@ mkdir -p handler/vo && touch handler/vo/.gitkeep
+	@ mkdir -p infra/const && touch infra/const/.gitkeep
+	@ mkdir -p infra/redis && touch infra/redis/.gitkeep
+	@ mkdir -p model/po && touch model/po/.gitkeep
+	@ mkdir -p rpc && touch rpc/.gitkeep
+	@ mkdir -p service/repo && touch service/repo/.gitkeep
+	@ mkdir -p service/bo && touch service/bo/.gitkeep
+	@ mkdir -p service/convertor && touch service/convertor/.gitkeep
+	@ mkdir -p service/const && touch service/const/.gitkeep
+	@ mkdir -p task && touch task/.gitkeep
+	@ mkdir -p utils && touch utils/.gitkeep
